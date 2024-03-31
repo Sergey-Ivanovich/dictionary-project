@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import DisplayResults from "./DisplayResults";
+import DisplayData from "./DisplayData";
 
 export default function Dictionary() {
   const [wordEntry, setWordEntry] = useState("");
@@ -29,17 +29,19 @@ export default function Dictionary() {
 
   return (
     <div className="Dictionary">
-      <form className="mt-5" onSubmit={handleSubmit}>
+      <form className="mt-5 " onSubmit={handleSubmit}>
         <input
           onChange={handleChange}
           type="search"
-          className="border border-gray me-2 btn searchBar text-start"
+          className="border border-gray me-2 btn searchBar text-start w-50"
           placeholder="e.g. Plane"
         ></input>
-        <input type="submit" className="ms-2 btn btn-primary"></input>
+        <input type="submit" className="ms-2 btn btn-primary w-25"></input>
       </form>
       <br />
-      <DisplayResults data={results} />
+      <br />
+
+      <DisplayData data={results} />
     </div>
   );
 }
