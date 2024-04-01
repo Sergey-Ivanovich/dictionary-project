@@ -1,4 +1,6 @@
 import React from "react";
+import Synonyms from "./Synonyms";
+import Example from "./Example";
 
 export default function DictionaryMeaning(props) {
   return (
@@ -6,8 +8,8 @@ export default function DictionaryMeaning(props) {
       <h3> {props.data.partOfSpeech}</h3>
       <h4>Definition</h4>
       <p>{props.data.definition}</p>
-      <h4>Example</h4>
-      <p>{props.data.example}</p>
+      <Example data={props.data.example} />
+      <Synonyms data={props.data.synonyms} />
     </div>
   );
 }
