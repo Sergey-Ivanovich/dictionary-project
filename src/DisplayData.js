@@ -6,7 +6,7 @@ export default function DisplayData(props) {
     console.log(props.data);
     return (
       <div className="DisplayData">
-        <section>
+        <section className="word-section">
           <h2>{props.data.word}</h2>
           {props.data.phonetic}
         </section>

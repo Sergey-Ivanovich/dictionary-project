@@ -28,6 +28,10 @@ input.submit-button {
   width: 28%;
 }
 
+.response-section {
+  border-left: 10px solid blue;
+}
+
 .Footer {
   padding-top: 10px;
 }
