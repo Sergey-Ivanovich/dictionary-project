@@ -6,7 +6,9 @@ export default function Example(props) {
     return (
       <div className="Example">
         <h4>Example</h4>
-        <p>{props.data}</p>
+        <p>
+          <em>{props.data}</em>
+        </p>
       </div>
     );
   } else {

@@ -1,0 +1,16 @@
+section {
+  background-color: white;
+  padding: 20px 40px;
+  border-radius: 10px;
+  border: 1px solid black;
+  margin: 10px;
+}
+
+.form-title {
+  font-size: 20px;
+  margin-bottom: -20px;
+}
+
+em {
+  opacity: 0.5;
+}

@@ -4,10 +4,28 @@
   max-width: 800px;
 }
 
+h1 {
+  margin-bottom: 40px;
+}
+
+h2 {
+  text-transform: capitalize;
+}
+
 h3 {
   font-weight: bolder;
+  text-decoration: underline;
+  text-transform: capitalize;
 }
 
 h4 {
   font-weight: bold;
+}
+
+html {
+  overscroll-behavior: none;
+}
+
+body {
+  background-color: rgb(252, 255, 238);
 }
