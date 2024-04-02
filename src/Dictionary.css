@@ -32,6 +32,12 @@ input.submit-button {
   border-left: 10px solid blue;
 }
 
+.buffering {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
 .Footer {
   padding-top: 10px;
 }
