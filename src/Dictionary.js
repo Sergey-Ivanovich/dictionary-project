@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import DisplayData from "./DisplayData";
 import "./Dictionary.css";
+import Footer from "./Footer";
 
 export default function Dictionary() {
   const [wordEntry, setWordEntry] = useState("");
@@ -44,6 +45,7 @@ export default function Dictionary() {
       </section>
 
       <DisplayData data={results} />
+      <Footer />
     </div>
   );
 }
