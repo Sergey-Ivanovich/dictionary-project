@@ -37,10 +37,13 @@ export default function Dictionary() {
           <input
             onChange={handleChange}
             type="search"
-            className="border border-gray me-2 btn searchBar text-start w-50"
+            className="border border-gray  btn search-bar text-start "
             placeholder="e.g. Plane"
           ></input>
-          <input type="submit" className="ms-2 btn btn-primary w-25"></input>
+          <input
+            type="submit"
+            className=" btn btn-primary submit-button"
+          ></input>
         </form>
       </section>
 

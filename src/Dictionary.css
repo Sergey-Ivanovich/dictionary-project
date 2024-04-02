@@ -14,3 +14,38 @@ section {
 em {
   opacity: 0.5;
 }
+
+form {
+  display: flex;
+  justify-content: space-around;
+}
+
+input.search-bar {
+  width: 70%;
+}
+
+input.submit-button {
+  width: 28%;
+}
+
+.Footer {
+  padding-top: 10px;
+}
+
+.Footer p {
+  opacity: 0.3;
+  text-align: center;
+  transition: all 150ms ease-in-out;
+}
+
+.Footer a {
+  text-decoration: none;
+}
+
+.Footer a:hover {
+  text-decoration: underline;
+}
+
+.Footer p:hover {
+  opacity: 1;
+}
