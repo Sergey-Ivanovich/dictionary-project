@@ -3,7 +3,6 @@ import DictionaryMeaning from "./DictionaryMeaning";
 
 export default function DisplayData(props) {
   if (props.data != null) {
-    console.log(props.data);
     return (
       <div className="DisplayData">
         <section className="word-section">

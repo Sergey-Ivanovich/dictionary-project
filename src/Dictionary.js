@@ -3,22 +3,32 @@ import axios from "axios";
 import DisplayData from "./DisplayData";
 import "./Dictionary.css";
 import Footer from "./Footer";
+import DisplayPhotos from "./DisplayPhotos";
 
 export default function Dictionary(props) {
   const [wordEntry, setWordEntry] = useState(props.defaultWord);
   const [results, setResults] = useState(null);
   const [loaded, setLoaded] = useState(false);
+  const [photo, setPhoto] = useState(null);
 
   function searchApi() {
     const apiKey = `oe3107c03bbf1b061844a8c3d518t9b3`;
     let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${wordEntry}&key=${apiKey}`;
     axios.get(apiUrl).then(handleResponse);
+
+    //const photoApiKey = `oe3107c03bbf1b061844a8c3d518t9b3`;
+    let photoApiUrl = `https://api.shecodes.io/images/v1/search?query=${wordEntry}&key=${apiKey}`;
+    axios.get(photoApiUrl).then(handlePhotoResponse);
   }
 
   function handleResponse(response) {
     setLoaded(true);
-    console.log(response.data);
+
     setResults(response.data);
+  }
+
+  function handlePhotoResponse(response) {
+    setPhoto(response.data);
   }
 
   function handleSubmit(event) {
@@ -51,6 +61,7 @@ export default function Dictionary(props) {
         </section>
 
         <DisplayData data={results} />
+        <DisplayPhotos data={photo} />
         <Footer />
       </div>
     );
