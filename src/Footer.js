@@ -13,7 +13,15 @@ export default function Footer() {
           >
             Eric N
           </a>{" "}
-          And is Hosted on{" "}
+          And is Open-Sourced on{" "}
+          <a
+            href="https://github.com/Sergey-Ivanovich/dictionary-project"
+            target="_blank"
+            rel="noreferrer"
+          >
+            GitHub
+          </a>{" "}
+          And Hosted on{" "}
           <a
             href="https://best-dictionary-app-react.netlify.app"
             target="_blank"
